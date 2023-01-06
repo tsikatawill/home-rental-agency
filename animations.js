@@ -13,5 +13,5 @@ export const slideY = (direction = "top") => ({
 export const slideX = (direction = "left") => ({
   initial: { x: direction === "right" ? 50 : -50 },
   animate: { x: 0 },
-  transition: { ease: "[0.6, 0.05, 0.3, 0.99]", duration: 0.15 },
+  transition: { duration: 0.15 },
 });
