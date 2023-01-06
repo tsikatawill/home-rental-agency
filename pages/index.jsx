@@ -1,5 +1,6 @@
+import { CostShowcase, Header } from "../components";
+
 import Head from "next/head";
-import { Header } from "../components";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       </Head>
 
       <Header />
+      <CostShowcase />
     </>
   );
 };
