@@ -32,7 +32,7 @@ export const CostShowcase = () => {
     },
   ];
   return (
-    <section className="py-10 sm:py-20">
+    <section className="py-10 sm:py-20 const dark:bg-slate-900 dark:text-white">
       <Container>
         <SectionHeader text={"minimum living cost takes care of everything"} />
 
