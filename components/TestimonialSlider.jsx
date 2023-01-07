@@ -31,6 +31,7 @@ export const TestimonialSlider = ({
             initial="initial"
             whileInView="animate"
             className="relative pl-5"
+            key={idx}
           >
             <Image
               className="absolute left-0 -top-7"
