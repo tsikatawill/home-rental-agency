@@ -48,11 +48,16 @@ export const PropertyCard = ({
           <span>{beds}</span>
         </div>
         <div className="flex justify-center items-center dark:invert gap-1 border-x border-x-[#E4E4E4] dark:border-black h-16">
-          <Image src="/icons/bath.svg" width={17} height={17} alt="bed.svg" />
+          <Image src="/icons/bath.svg" width={17} height={17} alt="bath.svg" />
           <span>{baths}</span>
         </div>
         <div className="flex justify-center items-center dark:invert gap-1 h-16">
-          <Image src="/icons/size.svg" width={17} height={17} alt="bed.svg" />
+          <Image
+            src="/icons/size.svg"
+            width={17}
+            height={17}
+            alt="floors.svg"
+          />
           <span>{floors}</span>
         </div>
       </div>
