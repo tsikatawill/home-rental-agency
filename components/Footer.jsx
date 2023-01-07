@@ -68,7 +68,7 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Image
-                    src="/icons/instagram.svg"
+                    src="/icons/Instagram.svg"
                     width={25}
                     height={25}
                     alt="instagram.svg"
