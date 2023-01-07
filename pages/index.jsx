@@ -1,4 +1,4 @@
-import { CostShowcase, Header } from "../components";
+import { CostShowcase, Header, Lifestyle, Properties } from "../components";
 
 import Head from "next/head";
 
@@ -12,6 +12,8 @@ const Home = () => {
 
       <Header />
       <CostShowcase />
+      <Properties />
+      <Lifestyle />
     </>
   );
 };
