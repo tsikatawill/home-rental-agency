@@ -38,7 +38,7 @@ export const CostShowcase = () => {
 
         <div className="flex flex-col md:flex-row mt-10 gap-10 items-center md:items-start">
           <div
-            className="image-wrapper flex-shrink-0 rounded-tl-[50px] rounded-br-[50px] overflow-hidden h-[521px] w-[387px] bg-slate-100"
+            className="image-wrapper flex-shrink-0 lg:flex-shrink-0 rounded-tl-[50px] rounded-br-[50px] overflow-hidden h-[521px] w-[387px] bg-slate-100"
             style={{ boxShadow: "5px 24px 53px rgba(0, 0, 0, 0.25)" }}
           >
             <motion.div
@@ -66,7 +66,8 @@ export const CostShowcase = () => {
               when: "beforeChildren",
             }}
             viewport={{ once: true }}
-            className="flex flex-wrap justify-center md:justify-start md:content-start gap-10"
+            // className="flex flex-wrap justify-center md:justify-start md:content-start gap-10"
+            className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
           >
             {CostItems.map((item, idx) => (
               <CostCard key={idx} {...item} />

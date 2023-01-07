@@ -6,7 +6,7 @@ export const CostCard = ({ icon, text }) => {
   return (
     <motion.div
       variants={scaleUp}
-      className="flex-shrink-0 w-[200px] h-fit gap-5 py-5 flex flex-col items-center md:items-start"
+      className="h-fit gap-5 py-5 flex flex-col items-center md:items-start"
     >
       <div
         className="bg-white h-[77px] w-[77px] grid place-content-center rounded-[10px]"
