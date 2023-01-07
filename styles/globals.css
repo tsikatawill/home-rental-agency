@@ -4,6 +4,6 @@
 @tailwind utilities;
 
 body {
+  @apply bg-white dark:bg-slate-900 overflow-x-hidden;
   font-family: "Inter", sans-serif;
-  overflow-x: hidden;
 }
