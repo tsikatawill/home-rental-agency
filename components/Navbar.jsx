@@ -29,7 +29,7 @@ export const Navbar = () => {
   const NavItems = ["Home", "Landlord", "Tenants", "Contact us"];
   return (
     <nav
-      className={`sticky top-0 z-20 ${transparentClasses} transition-all duration-200 ease-in`}
+      className={`top-0 z-20 ${transparentClasses} transition-all duration-200 ease-in`}
     >
       <Container>
         <motion.div

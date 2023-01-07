@@ -9,3 +9,15 @@ export const slideY = (direction = "top") => ({
   animate: { y: 0 },
   transition: { ease: "[0.6, 0.05, 0.3, 0.99]", duration: 0.15 },
 });
+
+export const slideX = (direction = "left") => ({
+  initial: { x: direction === "right" ? 50 : -50 },
+  animate: { x: 0 },
+  transition: { duration: 0.15 },
+});
+
+export const click = {
+  initial: { scale: 1 },
+  animate: { scale: 0.95 },
+  transition: { duration: 0.05 },
+};
