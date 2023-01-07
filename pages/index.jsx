@@ -4,6 +4,7 @@ import {
   Header,
   Lifestyle,
   Properties,
+  Testimonials,
 } from "../components";
 
 import Head from "next/head";
@@ -21,6 +22,7 @@ const Home = () => {
       <Properties />
       <Lifestyle />
       <AddProperty />
+      <Testimonials />
     </>
   );
 };
