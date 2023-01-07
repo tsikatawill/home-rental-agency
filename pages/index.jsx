@@ -1,4 +1,10 @@
-import { CostShowcase, Header, Lifestyle, Properties } from "../components";
+import {
+  AddProperty,
+  CostShowcase,
+  Header,
+  Lifestyle,
+  Properties,
+} from "../components";
 
 import Head from "next/head";
 
@@ -14,6 +20,7 @@ const Home = () => {
       <CostShowcase />
       <Properties />
       <Lifestyle />
+      <AddProperty />
     </>
   );
 };
