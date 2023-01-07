@@ -16,7 +16,7 @@ import { useTheme } from "../hooks";
 export const AddProperty = () => {
   const { colorTheme } = useTheme();
   return (
-    <section className="py-20">
+    <section className="py-20 dark:bg-slate-900 dark:text-white">
       <Container>
         <h2 className="text-2xl font-medium text-center capitalize">
           Your property with us and be Confident that Your Room will be Filled
@@ -30,7 +30,7 @@ export const AddProperty = () => {
             toast.success("Property Added Successfully", { theme: colorTheme });
           }}
           id="add-property-form"
-          className="p-10 md:p-20 rounded-xl w-full min-h-[500px] mt-7 sm:mt-10"
+          className="p-10 md:p-20 rounded-xl w-full min-h-[500px] mt-7 sm:mt-10 dark:bg-slate-800"
           style={{ boxShadow: "0px 4px 63px rgba(0, 0, 0, 0.15)" }}
         >
           <legend className="font-bold text-3xl capitalize text-center text-orange-500 mb-7 sm:mb-10">

@@ -12,8 +12,10 @@ export const DnD = () => {
   return (
     <div
       {...getRootProps()}
-      className={`w-full h-[100px] p-5 cursor-pointer text-center ${
-        isDragActive ? "bg-orange-50" : "bg-[#F9F9F9]"
+      className={`w-full h-[100px] p-5 cursor-pointer transition-all duration-150 text-center ${
+        isDragActive
+          ? "bg-orange-50 dark:bg-slate-700"
+          : "bg-[#F9F9F9]   dark:bg-[rgba(0,0,0,0.5)]"
       } font-700 focus:outline-0 rounded-md bg-[rgba(244, 81, 30, 0.01)] border border-dashed border-orange-500 flex justify-center items-center`}
     >
       <input

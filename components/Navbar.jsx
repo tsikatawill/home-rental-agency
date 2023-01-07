@@ -60,7 +60,7 @@ export const Navbar = () => {
                 <Image
                   width={20}
                   height={20}
-                  src="/icons/sun.svg"
+                  src="/icons/moon.svg"
                   alt="theme-toggle-btn.svg"
                 />
               </AnimatedToggle>
@@ -70,7 +70,7 @@ export const Navbar = () => {
                 <Image
                   width={20}
                   height={20}
-                  src="/icons/moon.svg"
+                  src="/icons/sun.svg"
                   alt="theme-toggle-btn.svg"
                 />
               </AnimatedToggle>
