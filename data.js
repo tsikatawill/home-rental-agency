@@ -183,3 +183,30 @@ export const PropertyItems = [
     floors: 3,
   },
 ];
+
+export const TestimonyList = [
+  {
+    text: "Error odit! Laboriosam esse veritatis mollitia ullam repudiandae, neque sint expedita? Repellendus illo earum quibusdam expedita ipsam perferendis iste explicabo delectus magnam amet nulla quae itaque placeat, cumque autem. Consectetur eum laborum eligendi non ipsam molestias, voluptates maiores illo totam at hic soluta.",
+    user: "Johnny Doe",
+    image: "https://loremflickr.com/100/100/person",
+    job: "CEO, OA Ltd",
+  },
+  {
+    text: "Dicta sint iure nemo vitae id officiis facere neque ris obcaecati at tempore excepturi sed atque, doloremque animi totam placeat architecto. Nobis odit adipisci possimus voluptates nihil, rem dolore atque,  suscipit mollitia sed numquam harum.",
+    user: "Fiifi Doe",
+    image: "https://loremflickr.com/100/100/woman",
+    job: "Clerk",
+  },
+  {
+    text: "Mollitia ullam repudiandae, neque sint expedita? Repellendus illo earum quibusdam expedita ipsam perferendis iste explicabo delectus magnam amet nulla quae itaque placeat, cumque autem. Consectetur eum laborum eligendi non ipsam molestias, voluptates maiores illo totam at hic soluta sit, fuga, obcaecati nihil adipisci facilis eaque veniam.",
+    user: "Peter Obi",
+    image: "https://loremflickr.com/100/100/map",
+    job: "UI/UX Designer",
+  },
+  {
+    text: "Amet aut omnis labore culpa dicta sint iure nemo vitae id officiis facere neque ris obcaecati at tempore excepturi sed atque, doloremque animi totam placeat architecto. Nobis odit adipisci possimus voluptates nihil, rem dolore atque,  suscipit mollitia sed numquam harum.",
+    user: "N. Akuffo Addo",
+    image: "https://loremflickr.com/100/100/president",
+    job: "Writer",
+  },
+];
