@@ -53,7 +53,7 @@ export const PropertyCard = ({
         </div>
         <div className="flex justify-center items-center dark:invert gap-1 h-16">
           <Image
-            src="/icons/size.svg"
+            src="/icons/sizes.svg"
             width={17}
             height={17}
             alt="floors.svg"
