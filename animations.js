@@ -15,3 +15,9 @@ export const slideX = (direction = "left") => ({
   animate: { x: 0 },
   transition: { duration: 0.15 },
 });
+
+export const click = {
+  initial: { scale: 1 },
+  animate: { scale: 0.95 },
+  transition: { duration: 0.05 },
+};
