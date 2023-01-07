@@ -1,6 +1,7 @@
 import {
   AddProperty,
   CostShowcase,
+  Footer,
   Header,
   Lifestyle,
   Properties,
@@ -18,11 +19,16 @@ const Home = () => {
       </Head>
 
       <Header />
-      <CostShowcase />
-      <Properties />
-      <Lifestyle />
-      <AddProperty />
-      <Testimonials />
+
+      <main>
+        <CostShowcase />
+        <Properties />
+        <Lifestyle />
+        <AddProperty />
+        <Testimonials />
+      </main>
+
+      <Footer />
     </>
   );
 };

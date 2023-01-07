@@ -4,6 +4,7 @@ export * from "./Button";
 export * from "./Container";
 export * from "./CostCard";
 export * from "./CostShowcase";
+export * from "./Footer";
 export * from "./FormElements";
 export * from "./Header";
 export * from "./Hero";
