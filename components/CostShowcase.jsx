@@ -32,11 +32,11 @@ export const CostShowcase = () => {
     },
   ];
   return (
-    <section className="py-10 sm:py-20 const dark:bg-slate-900 dark:text-white">
+    <section className="py-20 const dark:bg-slate-900 dark:text-white">
       <Container>
         <SectionHeader text={"minimum living cost takes care of everything"} />
 
-        <div className="flex flex-col sm:flex-row mt-10 gap-10 items-center md:items-start">
+        <div className="flex flex-col md:flex-row mt-10 gap-10 items-center md:items-start">
           <div
             className="image-wrapper flex-shrink-0 rounded-tl-[50px] rounded-br-[50px] overflow-hidden h-[521px] w-[387px] bg-slate-100"
             style={{ boxShadow: "5px 24px 53px rgba(0, 0, 0, 0.25)" }}
@@ -63,10 +63,10 @@ export const CostShowcase = () => {
             whileInView="animate"
             transition={{
               staggerChildren: 0.05,
-              //   when: "afterChildren",
+              when: "beforeChildren",
             }}
-            // viewport={{ once: true }}
-            className="flex flex-wrap justify-center sm:justify-start sm:content-start gap-10"
+            viewport={{ once: true }}
+            className="flex flex-wrap justify-center md:justify-start md:content-start gap-10"
           >
             {CostItems.map((item, idx) => (
               <CostCard key={idx} {...item} />
