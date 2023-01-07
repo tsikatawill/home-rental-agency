@@ -15,3 +15,6 @@ export * from "./PaginationButton";
 export * from "./Properties";
 export * from "./PropertyCard";
 export * from "./SectionHeader";
+export * from "./Testimonials";
+export * from "./TestimonialSlider";
+export * from "./VideoPlayer";
