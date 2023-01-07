@@ -16,9 +16,8 @@ export const PropertyCard = ({
     <motion.div
       variants={scaleUp}
       initial="initial"
-      whileInView="animate"
-      exit={{ opacity: 0, transition: { duration: 0.1 } }}
-      viewport={{ once: true }}
+      animate="animate"
+      transition={{ duration: 0.3, ease: "easeIn" }}
       className="bg-white border borer-[#979797] w-full rounded-3xl overflow-hidden dark:bg-slate-900 "
       style={{ boxShadow: "0px 34.0693px 36.1986px rgba(0, 0, 0, 0.133714)" }}
     >
