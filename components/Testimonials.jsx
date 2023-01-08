@@ -6,7 +6,7 @@ export const Testimonials = () => {
   return (
     <section className="py-20 bg-[rgba(244,81,30,0.07)] dark:text-white">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center overflow-x-hidden">
           <TestimonialSlider testimonies={TestimonyList} />
 
           <div className="h-[500px] sm:h-[600px] w-full">
