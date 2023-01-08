@@ -5,13 +5,13 @@ export const scaleUp = {
 };
 
 export const slideY = (direction = "top") => ({
-  initial: { y: direction === "bottom" ? 50 : -50 },
+  initial: { y: direction === "bottom" ? 100 : -100 },
   animate: { y: 0 },
   transition: { ease: "easeOut", duration: 0.2 },
 });
 
 export const slideX = (direction = "left") => ({
-  initial: { x: direction === "right" ? 50 : -50 },
+  initial: { x: direction === "right" ? 100 : -100 },
   animate: { x: 0 },
   transition: { duration: 0.2, ease: "easeOut" },
 });
@@ -19,5 +19,5 @@ export const slideX = (direction = "left") => ({
 export const click = {
   initial: { scale: 1 },
   animate: { scale: 0.95 },
-  transition: { duration: 0.05 },
+  transition: { duration: 0.05, ease: "easeOut" },
 };
