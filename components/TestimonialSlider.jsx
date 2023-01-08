@@ -27,11 +27,14 @@ export const TestimonialSlider = ({
       {testimonies.map((item, idx) => {
         return idx === selectedIndex ? (
           <motion.div
-            variants={{ initial: { opacity: 0 }, animate: { opacity: 1 } }}
+            variants={{
+              initial: { x: -100, opacity: 0 },
+              animate: { opacity: 1, x: 0 },
+            }}
             initial="initial"
             whileInView="animate"
-            transition={{ ease: "easeOut", duration: 0.2 }}
-            className="relative pl-5 min-h-[350px]"
+            transition={{ ease: "easeOut", duration: 0.5 }}
+            className="relative pl-5 min-h-[330px]"
             key={idx}
           >
             <Image
@@ -62,7 +65,7 @@ export const TestimonialSlider = ({
         ) : null;
       })}
 
-      <div className="flex gap-3 mt-10 md:mt-20 pl-5">
+      <div className="flex gap-3 md:mt-20 pl-5">
         {testimonies.map((item, idx) => (
           <div
             className={`p-2 my-2 h-1 w-1 cursor-pointer ${
