@@ -27,10 +27,11 @@ export const TestimonialSlider = ({
       {testimonies.map((item, idx) => {
         return idx === selectedIndex ? (
           <motion.div
-            variants={slideX()}
+            variants={{ initial: { opacity: 0 }, animate: { opacity: 1 } }}
             initial="initial"
             whileInView="animate"
-            className="relative pl-5"
+            transition={{ ease: "easeOut", duration: 0.2 }}
+            className="relative pl-5 min-h-[350px]"
             key={idx}
           >
             <Image

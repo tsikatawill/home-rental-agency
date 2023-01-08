@@ -1,19 +1,19 @@
 export const scaleUp = {
   initial: { scale: 0 },
   animate: { scale: 1 },
-  transition: { ease: [0.6, 0.05, 0.3, 0.99] },
+  transition: { ease: "easeOut" },
 };
 
 export const slideY = (direction = "top") => ({
   initial: { y: direction === "bottom" ? 50 : -50 },
   animate: { y: 0 },
-  transition: { ease: "[0.6, 0.05, 0.3, 0.99]", duration: 0.15 },
+  transition: { ease: "easeOut", duration: 0.2 },
 });
 
 export const slideX = (direction = "left") => ({
   initial: { x: direction === "right" ? 50 : -50 },
   animate: { x: 0 },
-  transition: { duration: 0.15 },
+  transition: { duration: 0.2, ease: "easeOut" },
 });
 
 export const click = {
