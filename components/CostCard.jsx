@@ -14,7 +14,7 @@ export const CostCard = ({ icon, text }) => {
       >
         <Image src={icon} width={45} height={45} alt="icon.svg" />
       </div>
-      <p className="font-semibold leading-[35px] text-2xl capitalize text-center md:text-left">
+      <p className="font-semibold leading-[35px] text-2xl capitalize text-center md:text-left max-w-[200px] sm:max-w-full ">
         {text}
       </p>
     </motion.div>
