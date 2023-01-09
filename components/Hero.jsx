@@ -63,6 +63,7 @@ export const Hero = () => {
             <motion.div
               variants={scaleUp}
               className="rounded-2xl border border-[#f9f9f9] overflow-hidden max-w-[408px] h-[340px] mb-5 mx-auto bg-slate-500"
+              style={{ boxShadow: "0px 0px 18px 3px rgba(0,0,0,0.25)" }}
             >
               <Map coordinates={coordinates} />
             </motion.div>
@@ -70,6 +71,7 @@ export const Hero = () => {
             <motion.div
               variants={scaleUp}
               className="bg-white text-black rounded-[10px] h-[88px] p-4 max-w-[408px] border border-[rbga(0,0,0,0.2)]"
+              style={{ boxShadow: "0px 0px 18px 3px rgba(0,0,0,0.2)" }}
             >
               <form
                 className="border border-[#e6e6e6] rounded-md overflow-hidden flex gap-2 bg-[#f9f9f9]"
