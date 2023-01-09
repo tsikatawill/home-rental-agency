@@ -39,7 +39,7 @@ export const TestimonialSlider = ({
             key={idx}
           >
             <Image
-              className="absolute left-0 -top-7"
+              className="absolute left-0 -top-2 sm:-top-7 h-10 w-10 sm:h-[60px] sm:w-[60px]"
               src="/icons/quotes.svg"
               width={60}
               height={60}
