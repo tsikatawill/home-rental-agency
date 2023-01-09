@@ -54,6 +54,7 @@ export const TestimonialSlider = ({
                   src={item.image}
                   width={60}
                   height={60}
+                  alt="user-image.svg"
                 />
               </div>
 
