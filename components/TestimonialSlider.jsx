@@ -33,6 +33,7 @@ export const TestimonialSlider = ({
             }}
             initial="initial"
             whileInView="animate"
+            viewport={{ once: true }}
             transition={{ ease: "easeOut", duration: 0.5 }}
             className="relative pl-5 min-h-[330px]"
             key={idx}
