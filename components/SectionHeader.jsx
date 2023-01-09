@@ -10,7 +10,7 @@ export const SectionHeader = ({ text }) => {
         whileInView="animate"
         transition={{ duration: 0.4 }}
         viewport={{ once: true }}
-        className="leading-[64px] font-extrabold text-4xl capitalize"
+        className="leading-[64px] font-extrabold text-4xl capitalize text-center sm:text-left"
       >
         {text}
       </motion.h2>
@@ -19,7 +19,7 @@ export const SectionHeader = ({ text }) => {
         whileInView={{ width: "40%" }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="h-1 w-52 bg-orange-500"
+        className="h-1 w-52 bg-orange-500 mx-auto sm:mx-0"
       ></motion.div>
     </div>
   );

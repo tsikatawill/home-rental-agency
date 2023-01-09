@@ -47,7 +47,7 @@ export const Hero = () => {
             transition={{ duration: 0.3 }}
             initial="initial"
             animate="animate"
-            className="capitalize font-bold text-[52px] leading-[70px]"
+            className="capitalize font-bold text-[52px] leading-[70px] text-center sm:text-left"
           >
             The most affordable place to stay in the san franciso bay area
           </motion.h1>
