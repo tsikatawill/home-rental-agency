@@ -50,7 +50,7 @@ export const Properties = () => {
   return (
     <section className="bg-[#F5F5F5] dark:bg-slate-700 dark:text-white py-20">
       <Container>
-        <div className="flex justify-between gap-5 sm:flex-row items-start sm:items-center flex-col">
+        <div className="flex justify-between gap-5 sm:flex-row items-center flex-col">
           <SectionHeader text="List of properties" />
 
           <Button>View All Properties</Button>
