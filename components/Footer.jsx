@@ -103,7 +103,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-500 pt-5 flex justify-center sm:gap-20 gap-10 flex-col sm:flex-row w-fit mx-auto mt-10 items-center sm:items-start">
+        <div className="border-t border-gray-500 pt-10 flex justify-center sm:gap-20 gap-10 flex-col sm:flex-row w-fit mx-auto mt-10  sm:items-start">
           <ul className="flex gap-5 uppercase flex-wrap">
             <li>About us</li>
             <li>Contact us</li>
@@ -119,7 +119,7 @@ export const Footer = () => {
           </p>
         </div>
 
-        <p className="mt-10 text-center">
+        <p className="mt-10 text-left sm:text-center">
           Made with 💖 by{" "}
           <Link href="https://twitter.com/dev_willman" legacyBehavior passHref>
             <a
