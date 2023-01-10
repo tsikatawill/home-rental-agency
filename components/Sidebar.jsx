@@ -12,8 +12,8 @@ export const Sidebar = ({
 }) => (
   <motion.aside
     variants={{
-      hidden: { x: "120%" },
-      show: { x: 0 },
+      hidden: { x: "120%", display: "hidden" },
+      show: { x: 0, display: "block" },
     }}
     initial="hidden"
     animate={open ? "show" : "hidden"}
