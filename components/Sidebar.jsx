@@ -19,7 +19,7 @@ export const Sidebar = ({
     animate={open ? "show" : "hidden"}
     transition={{ ease: "easeOut" }}
     open={open}
-    className="fixed top-0 right-0 w-full h-full bg-white text-black dark:bg-slate-800 dark:text-white z-50"
+    className="fixed top-0 right-0 w-screen h-full bg-white text-black dark:bg-slate-800 dark:text-white z-50"
   >
     <Container>
       <ul className="items-center flex flex-col gap-5 justify-center min-h-screen">
