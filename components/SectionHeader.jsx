@@ -3,7 +3,7 @@ import { slideX } from "../animations";
 
 export const SectionHeader = ({ text }) => {
   return (
-    <div className="w-fit">
+    <div className="min-w-fit overflow-x-hidden">
       <motion.h2
         variants={slideX("right")}
         initial="initial"
