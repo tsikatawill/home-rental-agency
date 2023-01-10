@@ -22,7 +22,7 @@ export const Sidebar = ({
     className="fixed top-0 right-0 w-screen h-full bg-white text-black dark:bg-slate-800 dark:text-white z-50"
   >
     <Container>
-      <ul className="items-center flex flex-col gap-5 justify-center min-h-screen">
+      <ul className="items-center flex flex-col gap-10 sm:gap-16 justify-center min-h-screen">
         {NavRoutes.map((item, idx) => (
           <li
             onClick={() => {
