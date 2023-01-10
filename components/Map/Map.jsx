@@ -11,7 +11,7 @@ const Map = ({ coordinates }) => {
       zoom={10}
       scrollWheelZoom={false}
       placeholder={<p>Loading map</p>}
-      style={{ height: "100%", width: "100%" }}
+      style={{ height: "100%", width: "100%", zIndex: 10 }}
     >
       <ChangeView center={coordinates} zoom={10} />
       <TileLayer

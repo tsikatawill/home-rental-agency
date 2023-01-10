@@ -1,3 +1,9 @@
+export const NavRoutes = [
+  { href: "/", name: "Home" },
+  { href: "/", name: "Landlord" },
+  { href: "/", name: "Tenants" },
+  { href: "/", name: "Contact us" },
+];
 export const PropertyItems = [
   // page 1
   {

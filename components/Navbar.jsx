@@ -1,84 +1,86 @@
-import { AnimatedToggle, Container, Logo } from "../components";
-import { useEffect, useState } from "react";
+import { AnimatedToggle, Container, Logo, Sidebar } from "../components";
 
 import Image from "next/image";
+import { NavRoutes } from "../data";
 import { motion } from "framer-motion";
 import { slideY } from "../animations";
+import { useState } from "react";
 import { useTheme } from "../hooks";
 
 export const Navbar = () => {
-  const [transparentClasses, setTransparentClasses] = useState("");
   const [activeNav, setActiveNav] = useState("Home");
   const { colorTheme, setTheme } = useTheme();
+  const [showSidebar, setShowSidebar] = useState(false);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 100) {
-  //       setTransparentClasses("bg-[rgba(0,0,0,.5)]");
-  //       console.log("hey");
-  //     } else {
-  //       setTransparentClasses("");
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
-
-  const NavItems = ["Home", "Landlord", "Tenants", "Contact us"];
   return (
-    <nav
-      className={`top-0 z-20 ${transparentClasses} transition-all duration-200 ease-in`}
-    >
-      <Container>
-        <motion.div
-          variants={slideY()}
-          initial="initial"
-          animate="animate"
-          className="inner grid grid-cols-4 pt-5 sm:pt-0 text-white sm:border-b border-white items-center w-full"
-        >
-          <Logo />
-
-          <ul className="hidden sm:flex justify-between col-start-2 col-end-4">
-            {NavItems.map((item, idx) => (
-              <NavItem
-                text={item}
-                active={item === activeNav}
-                handleClick={() => setActiveNav(item)}
-                key={idx}
-              />
-            ))}
-          </ul>
-
-          <button
-            className="justify-self-end col-start-4"
-            onClick={() => setTheme(colorTheme === "light" ? "light" : "dark")}
+    <>
+      <nav className="top-0 z-20 transition-all duration-200 ease-in">
+        <Container>
+          <motion.div
+            variants={slideY()}
+            initial="initial"
+            animate="animate"
+            className="inner grid grid-cols-4 pt-5 sm:pt-0 text-white sm:border-b border-white items-center w-full"
           >
-            {colorTheme === "dark" && (
-              <AnimatedToggle>
+            <Logo />
+
+            <ul className="hidden sm:flex justify-between col-start-2 col-end-4">
+              {NavRoutes.map((item, idx) => (
+                <NavItem
+                  text={item.name}
+                  active={item.name === activeNav}
+                  handleClick={() => setActiveNav(item.name)}
+                  key={idx}
+                />
+              ))}
+            </ul>
+
+            <div className="justify-self-end flex items-center gap-5 col-start-4">
+              <button
+                className=""
+                onClick={() =>
+                  setTheme(colorTheme === "light" ? "light" : "dark")
+                }
+              >
+                {colorTheme === "dark" && (
+                  <AnimatedToggle>
+                    <Image
+                      width={20}
+                      height={20}
+                      src="/icons/moon.svg"
+                      alt="theme-toggle-btn.svg"
+                    />
+                  </AnimatedToggle>
+                )}
+                {colorTheme === "light" && (
+                  <AnimatedToggle>
+                    <Image
+                      width={20}
+                      height={20}
+                      src="/icons/sun.svg"
+                      alt="theme-toggle-btn.svg"
+                    />
+                  </AnimatedToggle>
+                )}
+              </button>
+
+              <button
+                onClick={() => setShowSidebar(true)}
+                className="block sm:hidden"
+              >
                 <Image
+                  src="/icons/menu-open.svg"
                   width={20}
                   height={20}
-                  src="/icons/moon.svg"
-                  alt="theme-toggle-btn.svg"
+                  alt="menu-open.svg"
                 />
-              </AnimatedToggle>
-            )}
-            {colorTheme === "light" && (
-              <AnimatedToggle>
-                <Image
-                  width={20}
-                  height={20}
-                  src="/icons/sun.svg"
-                  alt="theme-toggle-btn.svg"
-                />
-              </AnimatedToggle>
-            )}
-          </button>
-        </motion.div>
-      </Container>
-    </nav>
+              </button>
+            </div>
+          </motion.div>
+        </Container>
+      </nav>
+      <Sidebar open={showSidebar} handleClose={() => setShowSidebar(false)} />
+    </>
   );
 };
 
